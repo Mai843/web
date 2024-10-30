@@ -1,0 +1,91 @@
+
+body {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #fff;
+            border-bottom: 2px solid #ddd;
+			
+        }
+        .navbar .menu-icon {
+			
+            font-size: 24px;
+        }
+        .navbar .nav-links {
+            display: flex;
+            gap: 130px;
+			align-items: center;
+			
+        }
+        .navbar .nav-links a {
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+			
+            justify-content: space-between;
+			text-align: center;
+        }
+        .navbar .nav-links a:hover,
+        .navbar .nav-links a.active {
+            color: #000;
+			font-size: 20px;
+        }
+        .navbar .nav-links a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+			
+        }
+		
+        .navbar .logo a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            right: 0;
+            height: 2px;
+           
+        }
+        .navbar .logo span {
+            display: block;
+            font-size: 10px;
+            font-weight: normal;
+        }
+        .navbar .icons {
+            display: flex;
+            gap: 15px;
+			align-items: center; /* Căn giữa theo chiều dọc */
+        }
+        .navbar .icons i {
+            font-size: 18px;
+            color: #000;
+        }
+		.gach {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.duonggach {
+			flex-grow: 1;
+			height: 1px;
+			background-color: black;
+		}
+		.icon-nho {
+			margin: 0 10px;
+			font-size: 7px;
+			color: black;
+		}
